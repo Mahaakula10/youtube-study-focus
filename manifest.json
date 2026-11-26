@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Study Focus",
+  "version": "1.0.0",
+  "description": "Hide distracting YouTube comments, recommendations and Shorts while keeping video playback available.",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "YouTube Study Focus",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Study Focus</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="container">
+    <h1>YouTube Study Focus</h1>
+    <p class="subtitle">A calmer space for learning.</p>
+
+    <div class="status-row">
+      <span id="statusText">Loading settings…</span>
+      <label class="switch" aria-label="Toggle focus mode">
+        <input type="checkbox" id="focusToggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <p class="hint">Hides comments, the recommendations panel and Shorts. Your video stays available.</p>
+    <p id="message" role="status" aria-live="polite"></p>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
